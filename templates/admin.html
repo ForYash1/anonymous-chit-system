@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin - View Messages</title>
+</head>
+<body>
+    <h2>All Anonymous Messages</h2>
+    <ul>
+        {% for msg in messages %}
+            <li>{{ msg[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
